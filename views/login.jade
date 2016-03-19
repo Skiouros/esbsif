@@ -1,0 +1,55 @@
+doctype html
+html
+    include header
+    body
+        include navbar
+        // #page-title start
+        section#page-title.page-title-2(data-stellar-background-ratio='0.5')
+          .container
+            .row
+              .grid_12
+                .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+                  h1 Login Portal
+              // .grid_8 end
+            // .row end
+          // .container end
+        // #page-title end
+        // .page-content start
+        section.page-content
+          // .container start
+          .container
+            // .row start
+            .row
+              // .grid_4 start
+              article.grid_4
+                .triggerAnimation.animated(data-animate='fadeInRight')
+                  section.heading-bordered.clearfix
+                    h3
+                      | Login
+                      b  Here
+                  // .heading-bordered end
+                  // login start
+                  form.wpcf7(action='/login', method='post')
+                    fieldset
+                      label
+                        span.text-red &midast;
+                        |  Email&colon;
+                      input#email.wpcf7-text(type='email', style='width: 300px;', name='username')
+                    fieldset
+                      label
+                        span.text-red &midast;
+                        |  Password&colon;
+                      input#passwd.wpcf7-text(type='password', style='width: 300px;', name='password')
+                    a(href='password-recovery.php') Forgot Your Password&quest;
+                    br
+                    br
+                    input#submit.wpcf7-submit(type='submit', value='Submit', name='submit')
+                  // login end
+                // .triggerAnimation.animated end
+              // .grid_4 end
+            // .row end
+          // .container end
+        // .page-content end
+            script(src='/public/js/jquery-1.9.1.js', data-loaded='true')
+        include footer
+

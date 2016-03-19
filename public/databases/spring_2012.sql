@@ -1,0 +1,60 @@
+-- phpMyAdmin SQL Dump
+-- version 4.0.9
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 13, 2014 at 11:11 PM
+-- Server version: 5.6.14
+-- PHP Version: 5.5.6
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Database: `sif`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `spring_2012`
+--
+
+CREATE TABLE IF NOT EXISTS `spring_2012` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstname` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `lastname` varchar(50) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `mem_year` varchar(15) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `mem_role` varchar(255) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  `bio` longtext CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+
+--
+-- Dumping data for table `spring_2012`
+--
+
+INSERT INTO `spring_2012` (`id`, `firstname`, `lastname`, `mem_year`, `mem_role`, `bio`) VALUES
+(1, 'Phil', 'Zhu', 'Spring 2012', 'Faculty Advisor', 'Phil Zhu is an Assistant Professor of Finance at the Eberhardt School of Business at the University of the Pacific. Dr. Zhu teaches courses in international finance as well as the introductory courses in financial management. His research focuses on cross-border mergers and acquisitions, corporate governance, and emerging market finance. He has published research articles in several journals including Journal of Corporate Finance, Journal of Business Research, Corporate Governance, Canadian Investment Review, and Advances in Quantitative Analysis of Finance and Accounting. Dr. Zhu is a recipient of the Barclay Global Investor Canada Research Award in 2006. Before joining the faculty at the University of the Pacific, Dr. Zhu taught at the Sprott School of Business, Carleton University. He also worked as a business analyst in a global management consulting firm in Canada. Dr. Zhu is a Chartered Financial Analyst (CFA).'),
+(2, 'Ivan', 'Yeo Shi Sheng', 'Spring 2012', 'Co-Portfolio Manager, Co-Operations Manager, Consumer Staples, Fixed Income, and Materials Sector Analyst', 'Ivan Yeo is currently a Senior, on his way to achieving a B.S. in Business Administration with a concentration in Finance. He is currently the energy sector analyst within the investment fund. Ivan became passionate about Finance at the age of 16 when his dad introduced him to the stock market. Ever since then, Ivan has developed his knowledge in financial markets and is currently trading his own portfolio in Stocks. FX and Index Futures. This past summer, Ivan did a financial internship with ABN AMRO in Singapore as a Risk Management Trainee. His experience in Singapore helped to develop his love for finance and further amplified his belief that money management is one of the most important factor in trading. When he graduates, he hopes to find a position as a Proprietary Trader and eventually start his own hedge fund.'),
+(3, 'Antonin', 'Chiberches', 'Spring 2012', 'Co-Chief Investment Officer, Chief Economist, & Healthcare Sector Analyst', 'Antonin is an exchange student from Institut d''Administration des Entreprises in Toulouse. He has been studying economics for two years and is now a senior completing a BS in business administration with a concentration in Finance. He is planning on going back to France to attempt a Masters in Finance after graduation. He did a 3 month training period in a French auditing company. Living with a competitive mentality, Antonin plays ice hockey and does skiing in competition. He grew up in France and Australia and is wishing to work in portfolio management/Trading rooms.'),
+(4, 'Marianna', 'Leonteva', 'Spring 2012', 'Co-Chief Investment Officer & Materials Sector Analyst', 'Marianna is an exchange student from IAE Toulouse, France. She is pursuing BS in Business Administration. Originally from Russia, Marianna possesses unique international knowledge, fluent in English, French and Chinese, she has had diverse multi-cultural interactions. For the past 4 years Marianna lived and studied in China and France, in result she gained experience and knowledge of Asian and European business practices. Back in Europe, she founded first Chinese Student Association in Toulouse, and also served as a chairwoman on the boards of severals cultural and humanitarian NGO''s. In parallel with her studies, Marianna runs her own e-consulting enterprise in international education. As Co-Chief Investment Officer of the SIF, Marianna focuses on the Materials sector. Her responsibilities include analyzing fund goals, determining direction and providing assistance and leadership to fellow members.'),
+(5, 'Meara', 'McCarthy', 'Spring 2012', 'Co-Portfolio Manager & Energy Sector Analyst', 'Meara McCarthy earned her bachelor’s degree from the Eberhardt School of Business with a concentration in Finance and is currently pursuing her MBA degree also from the University of the Pacific. Throughout her time at Pacific, Meara was member of the Pacific Women’s Water Polo Team. During her time on the team Meara and her team mates earned a conference title. In the Investment Fund, Meara serves as an energy sector analyst and as co-portfolio manager. After graduation Meara would like to travel and work overseas and ideal find a position in the finance industry.'),
+(6, 'Florian', 'Gornik', 'Spring 2012', 'Co-Portfolio Manager & Energy Sector Analyst', 'Florian Gornik is an international student-athlete from Vienna, Austria. He earned his bachelor‘s degree in International Business from the Eberhardt School of Business and is currently pursuing his MBA degree also from the University of the Pacific. Throughout his time at Pacific, Florian excelled both in the classroom as well as on the court as part of the Pacific Men’s Volleyball Team. In his last year as an undergraduate he received the “Outstanding Student Award. In the Investment Fund, Florian currently serves as an energy sector analyst and co-portfolio manager. After graduation he wants to stay in the U.S. and ideally find a position as a business strategist or global marketing manager.'),
+(7, 'Andrew', 'Mendoza', 'Spring 2012', 'Chief Technology Officer & Technology Sector Analyst', 'Andrew Mendoza is a junior at the University of the Pacific studying management information systems and finance as well as pursuing a minor in computer science. Andrew joined the student investment fund to obtain real world experience in portfolio management. He is a part of the Powell Scholars Program and is the current the president for Delta Sigma Pi - Lambda Mu Chapter. Outside of school, Andrew works on Pacific''s website and is an tutor at the Center for Community involvement. He hopes to pursue a career in the technology industry upon graduation.'),
+(8, 'Tyler', 'Payne', 'Spring 2012', 'Chief Administrator, Deputy Economist, & Technology Sector Analyst', 'Tyler H. Payne is a senior at the University of the Pacific where he is a candidate for a BA in history and has minors in economics and law. Tyler spent his junior year abroad studying International History at the London School of Economics. He serves as the President of the Council of University Social Entrepreneurship. As an Ambassador Corps Fellows during the summer of 2010 Tyler volunteered at the Maharishi Institute in Johannesburg, South Africa. He is a member of the Legal Scholars Program and Phi Alpha Delta, the legal fraternity. He has held internships at Massachusetts state house, the San Joaquin Bar Association, and the Mediation Center of San Joaquin.'),
+(9, 'Jorge', 'Delgadillo', 'Spring 2012', 'Co-Chief Marketing Director & Industrial Sector Analyst', 'Jorge is currently a junior in the Eberhardt School of Business, working to obtain his B.S. in Business Administration with a concentration in finance and marketing, expecting to graduate in May of 2013. He currently holds the position of Co-Chief Marketing Director for the fund and is the Industrial Sector analyst. Jorge has been actively involved on campus since his freshman year. He is currently the Vice President of Chapter Operations for the business fraternity Delta Sigma Pi- Lambda Mu Chapter,individual tutor at the Center for Community Involvement, while being a Student Advisor at the Student Academic Support Services office for the incoming freshman at Pacific. Upon graduation, he hopes to continue to graduate school to obtain a Masters in Health Administration.'),
+(10, 'Kiran', 'Sartaj Kaur', 'Spring 2012', 'Co-Chief Marketing Director & Industrial Sector Analyst', 'Kiran Sartaj Kaur is a Senior at the University of the Pacific majoringin Economics. Throughout her collegiate years she has been a very active student on and off campus. She has been a member of Delta Sigma Pi for 3+ years, captain of the Indian Dance Team and a member of the Global Center for Entrepreneurship. Sartaj has a varied experience in the business world through several internship positions in the public and private sector. As the Chief Marketing Officer of the Student Investment Fund Sartaj has helped launch a new marketing campaign this semester to create an increased awareness of the Fund on campus. Sartaj is looking forward to entering the work force post graduation and soon pursing an MBA.'),
+(11, 'Darya', 'Ramanava', 'Spring 2012', 'Junior Economist & Health Sector Analyst', 'Darya is an exchange student from American University in Bulgaria, initially born in Belarus. She is doing a double major in Finance and International Economics with expected to graduation in May 2013, and is currently holding positions of junior economist and health sector analyst. Darya is also actively involved on campus in Global Center for Social Entrepreneurship and Model United Nations Conference. Besides that, she is pursuing an investment research project with a professor. At the home university, she was working in multiple spheres: as a writing center coordinator, student ambassador and journalist. After completion of several internship programs in Russia, Bulgaria and USA, Darya obtained valuable international experience about different business practices around the world. After graduation, Darya is determined to do a M.S. in finance in Germany or Switzerland.'),
+(12, 'Nervin', 'Sidhu', 'Spring 2012', 'Outreach Coordinator & Financial Sector Analyst', 'Nervin Sidhu is currently a senior, on his way to completing a dual degree with a primary B.S. in Applied Economics, philosophy (2nd major), and a secondary degree with a B.S. in Business Administration with a concentration in finance. He expects to graduate in May 2012. Nervin currently holds positions as mentor to the finance club, accountant, and analyst for the financial sector. After graduation he hopes to begin working on his CFA Charter, while working as an equity or fixed income analyst.'),
+(13, 'Goran', 'Tomasevic', 'Spring 2012', 'Co-Operations Manager & Financial Sector Analyst', 'Goran Tomasevic is majoring in B.S. Business Administration with concentration in Finance. Tomasevic is currently a junior with an expected graduation date in December 2013. He possesses unique international knowledge, fluent in English and Croatian; Tomasevic has had multiple multi-cultural interactions. He is experienced and knowledgeable of European and South Eastern business practices. As Operations Manager of the Student investment Fund at The University of the Pacific, Tomasevic, focuses on the financials sector. Tomasevic is also 3 times All-American playing for University of the Pacific men''s water polo team.');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

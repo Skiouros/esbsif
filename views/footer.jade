@@ -1,0 +1,291 @@
+section.footer-wrapper
+      footer#footer
+        .container
+          .row
+            section.triggerAnimation.animated(data-animate='fadeIn')
+              ul.grid_3.footer-widget-container
+                li.widget.widget_text.clearfix
+                  img(src='/public/img/logo-light.png', alt='Eberhardt School of Business Student Investment Fund')
+                  br
+                  br
+                  p
+                    | Welcome to the Official Website of the
+                    b  Eberhardt
+                    |  School of Business
+                    b  Student
+                    |  Investment Fund&period;
+                  br
+                  br
+                  h6 Our Newsletter
+                  p
+                    | Subscribe to our newsletter to get
+                    | updates on our portfolio and accomplishments&period;
+                  br
+                  form.newsletter
+                    input.email(type='email', placeholder='Enter your email here...')
+                    input.submit(type='submit', value='SEND')
+              ul.grid_3.footer-widget-container
+                li.widget.pi_recent_posts
+                  h6 recent posts
+                  ul
+                    li
+                      .post-media
+                        img(src='/public/img/blog/recent-post-1.jpg', alt='recent post image')
+                      .widget-post-info
+                        a(href='#')
+                          h6 Blog Post 3
+                        ul.meta
+                          li.icon-clock
+                            span  Feb 9&comma; 2014,
+                          li.icon-user
+                            span  Admin
+                    li
+                      .post-media
+                        img(src='/public/img/blog/recent-post-2.jpg', alt='creative world')
+                      .widget-post-info
+                        a(href='#')
+                          h6 Blog Post 2
+                        ul.meta
+                          li.icon-clock
+                            span  Feb 8&comma; 2014,
+                          li.icon-user
+                            span  Admin
+                    li
+                      .post-media
+                        img(src='/public/img/blog/recent-post-3.jpg', alt='touch enabled sliders')
+                      .widget-post-info
+                        a(href='#')
+                          h6 Blog Post 1
+                        ul.meta
+                          li.icon-clock
+                            span  Feb 7&comma; 2014,
+                          li.icon-user
+                            span  Admin
+              ul.grid_3.footer-widget-container
+                li.widget.widget_text.clearfix
+                  h6 Instagram Feed
+                  .widget.social-feed.instagram-feed
+              ul.grid_3.footer-widget-container
+                li.widget.widget_text
+                  h6 CONTACT INFO
+                  ul.contact-info-list
+                    li
+                      p
+                        i.icon-home
+                        span.strong Address&colon;
+                        br
+                        | Eberhardt School of Business
+                        br
+                        | University of The Pacific
+                        br
+                        | 3601 Pacific Avenue
+                        br
+                        | Stockton&comma; CA&comma; USA   95211
+                    li
+                      p
+                        i.icon-envelope
+                        span.strong Email&colon;
+                        a(href='mailto:contact@esbsif.com')  contact&commat;esbsif&period;com
+                    li
+                      p
+                        i.icon-phone
+                        span.strong Telephone&colon;
+                        a(href='tel:12099463904')  &plus;1 &lpar;209&rpar; 946-3904
+                    li
+                      p
+                        i.icon-phone
+                        span.strong Fax&colon;
+                        a(href='tel:12099462586')  &plus;1 &lpar;209&rpar; 946-2586
+                  br
+                  a.underlined(href='/contact') FIND US ON MAP
+      .copyright-container
+        .container
+          .row
+            section.grid_6
+              p Eberhardt School of Business &VerticalLine; Student Investment Fund &copy; 2014&period;
+            section.grid_6
+              .footer-breadcrumbs
+                a(href='/') HOME
+                a(href='/company') COMPANY
+                a(href='#') PORTFOLIO
+                a(href='#') NEWS
+                a(href='#') PUBLICATIONS
+                a(href='/contact') CONTACT
+
+script(src='/public/js/jquery-1.9.1.js', data-loaded='true')
+script(src='/public/js/jquery-migrate-1.2.1.min.js', data-loaded='true')
+script(src='/public/js/jquery.placeholder.min.js', data-loaded='true')
+
+script(src='/public/js/modernizr.custom.js', data-loaded='true')
+script(src='/public/js/jquery.dlmenu.js', data-loaded='true')
+script(src='/public/js/waypoints.min.js', data-loaded='true')
+script(src='/public/js/retina-1.1.0.min.js', data-loaded='true')
+script(src='/public/js/jquery.stellar.min.js', data-loaded='true')
+script(src='/public/js/jquery.tweetscroll.js', data-loaded='true')
+script(src='/public/js/jquery.carouFredSel-6.2.1-packed.js', data-loaded='true')
+script(src='/public/rs-plugin/js/jquery.themepunch.plugins.min.js', data-loaded='true')
+script(src='/public/rs-plugin/js/jquery.themepunch.revolution.min.js', data-loaded='true')
+script(src='/public/js/jquery.stellar.min.js', data-loaded='true')
+script(src='/public/js/jquery.isotope.min.js', data-loaded='true')
+script(src='/public/sharre/jquery.sharrre-1.3.4.min.js', data-loaded='true')
+script(src='/public/js/portfolio.js', data-loaded='true')
+script(src='/public/js/jquery.touchSwipe-1.6.js', data-loaded='true')
+script(src='/public/js/jquery.countTo.js', data-loaded='true')
+script(src='/public/js/jquery.prettyPhoto.js', data-loaded='true')
+script(src='/public/js/jquery.nivo.slider.js')
+
+script(src='/public/js/socialstream.jquery.js', data-loaded='true')
+
+script(src='/public/js/easypiechart.js')
+script(src='/public/js/include.js', data-loaded='true')
+
+// Social Networks Feeds
+script(data-loaded='true').
+  /* <![CDATA[ */
+  jQuery(document).ready(function($) {
+  'use strict';
+  //REVOLUTION SLIDE
+  var revapi;
+  revapi = jQuery('.tp-banner').revolution(
+  {
+  delay: 5000,
+  startwidth: 1170,
+  startheight: 500,
+  hideThumbs: 10,
+  fullWidth: "on",
+  forceFullWidth: "on",
+  navigationType: "none" // bullet, thumb, none
+  });
+  $('.numbers-counter').waypoint(function() {
+  // NUMBERS COUNTER START
+  $('.numbers').data('countToOptions', {
+  formatter: function(value, options) {
+  return value.toFixed(options.decimals).replace(/\\B(?=(?:\d{3})+(?!\d))/g, ',');
+  }
+  });
+  // start timer
+  $('.timer').each(count);
+  function count(options) {
+  var $this = $(this);
+  options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+  $this.countTo(options);
+  } // NUMBERS COUNTER END
+  },
+  {offset: '70%'}
+  );
+  // PRETTYPHOTO LIGHTBOX START
+  if (jQuery().prettyPhoto) {
+  piPrettyphoto();
+  }
+  function piPrettyphoto() {
+  $("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools: false});
+  }// PRETTYPHOTO LIGHTBOX END
+  //PORTFOLIO CAROUSEL
+  //  Responsive layout, resizing the items
+  $('#portfolio-carousel').carouFredSel({
+  responsive: true,
+  width: '100%',
+  height: '100%',
+  auto: false,
+  scroll: 1,
+  prev: '.c_prev_2',
+  next: '.c_next_2',
+  items: {
+  width: 400,
+  height: '100%',
+  visible: {
+  min: 1,
+  max: 4
+  }
+  }
+  });
+  //  Responsive layout, resizing the items
+  $('#testimonial-carousel').carouFredSel({
+  responsive: true,
+  width: '100%',
+  auto: true,
+  scroll: 1,
+  swipe: {
+  onMouse: true,
+  onTouch: true
+  },
+  items: {
+  width: '770',
+  height: 'variable',
+  visible: {
+  min: 1,
+  max: 1
+  }
+  }
+  });
+  //  Responsive layout, resizing the items
+  $('#testimonial-carousel-2').carouFredSel({
+  responsive: true,
+  width: '100%',
+  auto: true,
+  scroll: 1,
+  swipe: {
+  onMouse: true,
+  onTouch: true
+  },
+  items: {
+  width: '370',
+  height: 'variable',
+  visible: {
+  min: 1,
+  max: 1
+  }
+  }
+  });
+  //  Responsive layout, resizing the items
+  $('#testimonial-carousel-3').carouFredSel({
+  responsive: true,
+  width: '100%',
+  auto: true,
+  scroll: 1,
+  swipe: {
+  onMouse: true,
+  onTouch: true
+  },
+  prev: '.c_prev',
+  next: '.c_next',
+  items: {
+  width: '1170',
+  height: 'variable',
+  visible: {
+  min: 1,
+  max: 1
+  }
+  }
+  });
+  //  Responsive layout, resizing the items
+  $('#testimonial-carousel-4').carouFredSel({
+  responsive: true,
+  width: '100%',
+  auto: true,
+  scroll: 1,
+  swipe: {
+  onMouse: true,
+  onTouch: true
+  },
+  prev: '.c_prev_2',
+  next: '.c_next_2',
+  items: {
+  width: '1170',
+  height: 'variable',
+  visible: {
+  min: 1,
+  max: 1
+  }
+  }
+  });
+  /* ================ INSTAGRAM FEED ================ */
+  $('.instagram-feed').socialstream({
+  socialnetwork: 'instagram',
+  limit: 4
+  username: 'cisco',
+  overlay: true
+  });
+  });
+  /* ]]> */
+

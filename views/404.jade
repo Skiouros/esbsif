@@ -1,0 +1,65 @@
+html
+head
+    meta(http-equiv='content-type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    title 404 | ESB SIF
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no')
+    meta(name='description', content='404 Error Page')
+    //if lt IE 9
+      script(src='/public/admin/js/flot/excanvas.min.js')
+      script(src='http://html5shiv.googlecode.com/svn/trunk/html5.js')
+      script(src='http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js')
+    link(rel='stylesheet', type='text/css', href='/public/admin/css/cloud-admin.css')
+    link(rel='stylesheet', type='text/css', href='/public/admin/css/responsive.css')
+    link(href='/public/admin/font-awesome/css/font-awesome.min.css', rel='stylesheet')
+
+    link(rel='stylesheet', type='text/css', href='/public/admin/js/bootstrap-daterangepicker/daterangepicker-bs3.css')
+    link(href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', rel='stylesheet', type='text/css')
+
+  body
+    section#page
+      .container
+        .row
+          .col-md-12
+            .divide-100
+        .row
+          .col-md-12.not-found.text-center
+            .error
+              | 404
+          .col-md-4.col-md-offset-4.not-found.text-center
+            .content
+              h3 Page not Found
+              p
+                | Sorry, but the page you're looking for has not been found
+                br
+                | Try going
+                a(href='/')  home
+                |  and try again.
+    //
+       JQUERY
+    script(src='/public/admin/js/jquery/jquery-2.0.3.min.js')
+    //
+       JQUERY UI
+    script(src='/public/admin/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js')
+    //
+       BOOTSTRAP
+    script(src='/public/admin/bootstrap-dist/js/bootstrap.min.js')
+    //
+       DATE RANGE PICKER
+    script(src='/public/admin/js/bootstrap-daterangepicker/moment.min.js')
+    script(src='/public/admin/js/bootstrap-daterangepicker/daterangepicker.min.js')
+    //
+       SLIMSCROLL
+    script(type='text/javascript', src='/public/admin/js/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js')
+    script(type='text/javascript', src='/public/admin/js/jQuery-slimScroll-1.3.0/slimScrollHorizontal.min.js')
+    //
+       COOKIE
+    script(type='text/javascript', src='/public/admin/js/jQuery-Cookie/jquery.cookie.min.js')
+    //
+       CUSTOM SCRIPT
+    script(src='/public/admin/js/script.js')
+    script.
+      jQuery(document).ready(function() {
+      App.setPage("widgets_box");  //Set current page
+      App.init(); //Initialise plugins and elements
+      });

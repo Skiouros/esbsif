@@ -1,0 +1,354 @@
+doctype html
+html(lang='en')
+    include /admin/header
+    body
+        include /admin/navbar
+
+        #main-content
+            #box-config.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+                .modal-dialog
+                    .modal-content
+                        .modal-header
+                            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+                            h4.modal-title Box Settings
+                        .modal-body
+                            | Here goes box setting content.
+                        .modal-footer
+                            button.btn.btn-default(type='button', data-dismiss='modal') Close
+                            button.btn.btn-primary(type='button') Save changes
+            //
+                  /SAMPLE BOX CONFIGURATION MODAL FORM
+            .container
+                .row
+                    #content.col-lg-12
+                        //
+                              PAGE HEADER
+                        .row
+                            .col-sm-12
+                                .page-header
+                                    //
+                                          STYLER
+                                    //
+                                          /STYLER
+                                    //
+                                          BREADCRUMBS
+                                    ul.breadcrumb
+                                        i.fa.fa-home
+                                        a(href='index.html') Home
+                                        li
+                                            a(href='#') More Pages
+                                        li User Profile
+                                    //
+                                          /BREADCRUMBS
+                                    .clearfix
+                                        h3.content-title.pull-left User Profile
+                                    .description User Profile, Skills, Activities and other Statistics
+                        //
+                              /PAGE HEADER
+                        //
+                              USER PROFILE
+                        .row
+                            .col-md-12
+                                //
+                                      BOX
+                                .box.border
+                                    .box-title
+                                        h4
+                                            i.fa.fa-user
+                                            span.hidden-inline-mobile Profile
+                                    .box-body
+                                        .tabbable.header-tabs.user-profile
+                                            ul.nav.nav-tabs
+                                                li
+                                                    a(href='#pro_edit', data-toggle='tab')
+                                                        i.fa.fa-edit
+                                                        span.hidden-inline-mobile  Edit Account
+                                                li.active
+                                                    a(href='#pro_overview', data-toggle='tab')
+                                                        i.fa.fa-dot-circle-o
+                                                        span.hidden-inline-mobile Overview
+                                            .tab-content
+                                                //
+                                                      OVERVIEW
+                                                #pro_overview.tab-pane.fade.in.active
+                                                    .row
+                                                        //
+                                                              PROFILE PIC
+                                                        .col-md-3
+                                                            .list-group
+                                                                li.list-group-item.zero-padding
+                                                                    img.img-responsive(alt='', src='/public/user/fall 2013/sueno_li.jpg')
+                                                                .list-group-item.profile-details
+                                                                    h2 Jennifer Doe
+                                                                    p
+                                                                        i.fa.fa-circle.text-green
+                                                                        | Online
+                                                                    p
+                                                                        | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet dolore magna aliquam tincidunt erat volutpat laoreet dolore magna aliquam tincidunt erat volutpat.
+                                                                    ul.list-inline
+                                                                        li
+                                                                            i.fa.fa-bitbucket.fa-2x
+                                                                a.list-group-item(href='#')
+                                                                    i.fa.fa-user.fa-fw
+                                                                    | Profile
+                                                                a.list-group-item(href='#')
+                                                                    span.badge.badge-red 9
+                                                                    i.fa.fa-calendar.fa-fw
+                                                                    | Events
+                                                        // PROFILE DETAILS
+                                                        .col-md-9
+                                                            .row
+                                                                .col-md-12
+                                                                    .box.border.blue
+                                                                        .box-title
+                                                                            h4
+                                                                                i.fa.fa-columns
+                                                                                span.hidden-inline-mobile Profile Summary
+                                                                        .box-body
+                                                                            .tabbable
+                                                                                ul.nav.nav-tabs
+                                                                                    li.active
+                                                                                        a(href='#sales', data-toggle='tab')
+                                                                                            i.fa.fa-signal
+                                                                                            span.hidden-inline-mobile Sales Table
+                                                                                    li
+                                                                                        a(href='#feed', data-toggle='tab')
+                                                                                            i.fa.fa-rss
+                                                                                            span.hidden-inline-mobile Recent Blogs
+                                                                                .tab-content
+                                                                                    #sales.tab-pane.active
+                                                                                        table.table.table-striped.table-bordered.table-hover
+                                                                                            thead
+                                                                                                tr
+                                                                                                    th
+                                                                                                        i.fa.fa-user
+                                                                                                        | Client
+                                                                                                    th.hidden-xs
+                                                                                                        i.fa.fa-quote-left
+                                                                                                        | Sales Item
+                                                                                                    th
+                                                                                                        i.fa.fa-dollar
+                                                                                                        | Amount
+                                                                                                    th
+                                                                                                        i.fa.fa-bars
+                                                                                                        | Status
+                                                                                            tbody
+                                                                                                tr
+                                                                                                    td
+                                                                                                        a(href='#') Fortune 500
+                                                                                                    td.hidden-xs Gold Level Virtual Server
+                                                                                                    td $ 2310.23
+                                                                                                    td
+                                                                                                        span.label.label-success.label-sm Paid
+                                                                                                tr
+                                                                                                    td
+                                                                                                        a(href='#') Cisco Inc.
+                                                                                                    td.hidden-xs Platinum Level Virtual Server
+                                                                                                    td $ 5502.67
+                                                                                                    td
+                                                                                                        span.label.label-warning.label-sm Pending
+                                                                                                tr
+                                                                                                    td
+                                                                                                        a(href='#') VMWare Ltd.
+                                                                                                    td.hidden-xs Hardware Switch
+                                                                                                    td $ 3472.54
+                                                                                                    td
+                                                                                                        span.label.label-success.label-sm Paid
+                                                                                                tr
+                                                                                                    td
+                                                                                                        a(href='#') Wall-Mart Stores
+                                                                                                    td.hidden-xs Branding & Marketing
+                                                                                                    td $ 6653.25
+                                                                                                    td
+                                                                                                        span.label.label-success.label-sm Paid
+                                                                                                tr
+                                                                                                    td
+                                                                                                        a(href='#') Exxon Mobil
+                                                                                                    td.hidden-xs UX and UI Services
+                                                                                                    td $ 45645.45
+                                                                                                    td
+                                                                                                        span.label.label-danger.label-sm Overdue
+                                                                                                tr
+                                                                                                    td
+                                                                                                        a(href='#') General Electric
+                                                                                                    td.hidden-xs Web Designing
+                                                                                                    td $ 3432.11
+                                                                                                    td
+                                                                                                        span.label.label-warning.label-sm Pending
+                                                                                    #feed.tab-pane
+                                                                                        .scroller(data-height='250px', data-always-visible='1', data-rail-visible='1')
+                                                                                            .feed-activity.clearfix
+                                                                                                div
+                                                                                                    i.pull-left.roundicon.fa.fa-check.btn.btn-info
+                                                                                                    a.user(href='#')  John Doe
+                                                                                                    | accepted your connection request.
+                                                                                                    br
+                                                                                                    a(href='#') View profile
+                                                                                                .time
+                                                                                                    i.fa.fa-clock-o
+                                                                                                    | 5 hours ago
+                                                                                            .feed-activity.clearfix
+                                                                                                div
+                                                                                                    i.pull-left.roundicon.fa.fa-picture-o.btn.btn-danger
+                                                                                                    a.user(href='#')  Jack Doe
+                                                                                                    | uploaded a new photo.
+                                                                                                    br
+                                                                                                    a(href='#') Take a look
+                                                                                                .time
+                                                                                                    i.fa.fa-clock-o
+                                                                                                    | 5 hours ago
+                                                                                            .feed-activity.clearfix
+                                                                                                div
+                                                                                                    i.pull-left.roundicon.fa.fa-edit.btn.btn-pink
+                                                                                                    a.user(href='#')  Jess Doe
+                                                                                                    | edited their skills.
+                                                                                                    br
+                                                                                                    a(href='#') Endorse them
+                                                                                                .time
+                                                                                                    i.fa.fa-clock-o
+                                                                                                    | 5 hours ago
+                                                                                            .feed-activity.clearfix
+                                                                                                div
+                                                                                                    i.pull-left.roundicon.fa.fa-bitcoin.btn.btn-yellow
+                                                                                                    a.user(href='#')  Divine Doe
+                                                                                                    | made a bitcoin payment.
+                                                                                                    br
+                                                                                                    a(href='#') Check your financials
+                                                                                                .time
+                                                                                                    i.fa.fa-clock-o
+                                                                                                    | 6 hours ago
+                                                                                            .feed-activity.clearfix
+                                                                                                div
+                                                                                                    i.pull-left.roundicon.fa.fa-dropbox.btn.btn-primary
+                                                                                                    a.user(href='#')  Lisbon Doe
+                                                                                                    | saved a new document to Dropbox.
+                                                                                                    br
+                                                                                                    a(href='#') Download
+                                                                                                .time
+                                                                                                    i.fa.fa-clock-o
+                                                                                                    | 1 day ago
+                                                                                            .feed-activity.clearfix
+                                                                                                div
+                                                                                                    i.pull-left.roundicon.fa.fa-pinterest.btn.btn-inverse
+                                                                                                    a.user(href='#')  Bob Doe
+                                                                                                    | pinned a new photo to Pinterest.
+                                                                                                    br
+                                                                                                    a(href='#') Take a look
+                                                                                                .time
+                                                                                                    i.fa.fa-clock-o
+                                                                                                    | 2 days ago
+                                                            //
+                                                                  /ROW 2
+                                                        //
+                                                              /PROFILE DETAILS
+                                                //
+                                                      /OVERVIEW
+                                                //
+                                                      EDIT ACCOUNT
+                                                #pro_edit.tab-pane.fade
+                                                    form.form-horizontal(action='/admin/user', method='post')
+                                                        .row
+                                                            .col-md-6
+                                                                .box.border.green
+                                                                    .box-title
+                                                                        h4
+                                                                            i.fa.fa-bars
+                                                                            | General Information
+                                                                    .box-body.big
+                                                                        .row
+                                                                            .col-md-12
+                                                                                h4 Basic Information
+                                                                                .form-group
+                                                                                    label.col-md-4.control-label First Name
+                                                                                    .col-md-8
+                                                                                        input.form-control(type='text', name='user_firstname', value='Jennifer')
+                                                                                .form-group
+                                                                                    label.col-md-4.control-label Last Name
+                                                                                    .col-md-8
+                                                                                        input.form-control(type='text', name='user_lastname')
+
+                                                                                .form-group
+                                                                                    label.col-md-4.control-label Years
+                                                                                    .col-md-8
+                                                                                        input#e8.col-md-12(type='hidden', value='', name='years')
+
+                                                                                h4 Contact Information
+
+                                                                                .form-group
+                                                                                    label.col-md-4.control-label Email Address
+                                                                                    .col-md-8
+                                                                                        input.form-control(type='text', name='address')
+                                                                                .form-group
+                                                                                    label.col-md-4.control-label Website
+                                                                                    .col-md-8
+                                                                                        .input-group
+                                                                                            span.input-group-addon http://
+                                                                                            input.form-control(type='text', name='website', placeholder='Website')
+                                                                                .form-group
+                                                                                    label.col-md-4.control-label Phone
+                                                                                    .col-md-8
+                                                                                        .input-group
+                                                                                            span.input-group-addon
+                                                                                                i.fa.fa-phone
+                                                                                            input.form-control(type='text', name='phone', data-mask='(999) 999-9999')
+                                                                                        span.help-block (999) 999-9999
+
+                                                            .col-md-6.form-vertical
+                                                                .box.border.inverse
+                                                                    .box-title
+                                                                        h4
+                                                                            i.fa.fa-bars
+                                                                            | Profile Settings
+                                                                    .box-body.big
+                                                                        h4 Permissions
+                                                                        .form-group
+                                                                            label.col-md-4.control-label Admin
+                                                                            .col-md-8
+                                                                                label.checkbox-inline
+                                                                                    input.uniform(type='checkbox', value='true', name='admin', checked='checked')
+                                                                                    | Enable
+                                                                        .form-group
+                                                                            label.col-md-4.control-label Hidden
+                                                                            .col-md-8
+                                                                                label.checkbox-inline
+                                                                                    input.uniform(type='checkbox', value='true', name='hidden', checked='checked')
+                                                                                    | Enable
+                                                                        .form-group
+                                                                            label.col-md-4.control-label Blog
+                                                                            .col-md-8
+                                                                                label.checkbox-inline
+                                                                                    input.uniform(type='checkbox', value='true', name='blog', checked='checked')
+                                                                                    | Enable
+                                                                        h4 Login
+                                                                        .form-group
+                                                                            label.col-md-4.control-label Username
+                                                                            .col-md-8
+                                                                                input.form-control(type='text', name='username')
+                                                                        .form-group
+                                                                            label.col-md-4.control-label Password
+                                                                            .col-md-8
+                                                                                input.form-control(type='password', name='password')
+
+
+
+                                                        .form-actions.clearfix
+                                                            input.btn.btn-danger.pull-right(type='submit', value='delete', name='action', onclick="return confirm('Are you sure you want to delete this account?');")
+                                                            input.btn.btn-primary.pull-right(type='submit', value='update', name='action')
+                                                //
+                                                      /EDIT ACCOUNT
+                                        //
+                                              /USER PROFILE
+                        .footer-tools
+                            span.go-top
+                                i.fa.fa-chevron-up
+                                | Top
+                    //
+                          /CONTENT
+        include /admin/js
+        script.
+            jQuery(document).ready(function() {
+                years = ["fall-2013", "spring-2013"];
+                $("#e8").select2({
+                    tags: years
+                });
+            });

@@ -1,0 +1,430 @@
+doctype html
+html(lang='en')
+    include /admin/header
+    body
+        include /admin/navbar
+        #main-content
+            .container
+                .row
+                    #content.col-lg-12
+                      //
+                         PAGE HEADER
+                      .row
+                        .col-sm-12
+                          .page-header
+                            //
+                               STYLER 
+                            //
+                               /STYLER 
+                            //
+                               BREADCRUMBS 
+                            ul.breadcrumb
+                              li
+                                i.fa.fa-home
+                                a(href='index.html') Home
+                              li
+                                a(href='#') Tables
+                              li Dynamic Tables
+                            //
+                               /BREADCRUMBS 
+                            .clearfix
+                              h3.content-title.pull-left Dynamic Tables
+                            .description Dynamic Tables and Modals
+                      //
+                         /PAGE HEADER 
+                      //
+                         DATA TABLES 
+                      .row
+                        .col-md-12
+                          //
+                             BOX 
+                          .box.border.green
+                            .box-title
+                              h4
+                                i.fa.fa-table
+                                | Dynamic Data Tables
+                              .tools.hidden-xs
+                                a.config(href='#box-config', data-toggle='modal')
+                                  i.fa.fa-cog
+                                a.reload(href='javascript:;')
+                                  i.fa.fa-refresh
+                                a.collapse(href='javascript:;')
+                                  i.fa.fa-chevron-up
+                                a.remove(href='javascript:;')
+                                  i.fa.fa-times
+                            .box-body
+                              table#datatable1.datatable.table.table-striped.table-bordered.table-hover(cellpadding='0', cellspacing='0', border='0')
+                                thead
+                                  tr
+                                    th Rendering engine
+                                    th Browser
+                                    th.hidden-xs Platform(s)
+                                    th Engine version
+                                    th.hidden-xs CSS grade
+                                tbody
+                                  tr.gradeX
+                                    td Trident
+                                    td
+                                      | Internet
+                                      | Explorer
+                                      | 4.0
+                                    td.hidden-xs Win 95+
+                                    td.center 4
+                                    td.center.hidden-xs X
+                                  tr.gradeC
+                                    td Trident
+                                    td
+                                      | Internet
+                                      | Explorer 5.0
+                                    td.hidden-xs Win 95+
+                                    td.center 5
+                                    td.center.hidden-xs C
+                                  tr.gradeA
+                                    td Trident
+                                    td
+                                      | Internet
+                                      | Explorer 5.5
+                                    td.hidden-xs Win 95+
+                                    td.center 5.5
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Trident
+                                    td
+                                      | Internet
+                                      | Explorer 6
+                                    td.hidden-xs Win 98+
+                                    td.center 6
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Trident
+                                    td Internet Explorer 7
+                                    td.hidden-xs Win XP SP2+
+                                    td.center 7
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Trident
+                                    td AOL browser (AOL desktop)
+                                    td.hidden-xs Win XP
+                                    td.center 6
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Firefox 1.0
+                                    td.hidden-xs Win 98+ / OSX.2+
+                                    td.center 1.7
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Firefox 1.5
+                                    td.hidden-xs Win 98+ / OSX.2+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Firefox 2.0
+                                    td.hidden-xs Win 98+ / OSX.2+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Firefox 3.0
+                                    td.hidden-xs Win 2k+ / OSX.3+
+                                    td.center 1.9
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Camino 1.0
+                                    td.hidden-xs OSX.2+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Camino 1.5
+                                    td.hidden-xs OSX.3+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Netscape 7.2
+                                    td.hidden-xs Win 95+ / Mac OS 8.6-9.2
+                                    td.center 1.7
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Netscape Browser 8
+                                    td.hidden-xs Win 98SE+
+                                    td.center 1.7
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Netscape Navigator 9
+                                    td.hidden-xs Win 98+ / OSX.2+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.0
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.1
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1.1
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.2
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1.2
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.3
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1.3
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.4
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1.4
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.5
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1.5
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.6
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center 1.6
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.7
+                                    td.hidden-xs Win 98+ / OSX.1+
+                                    td.center 1.7
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Mozilla 1.8
+                                    td.hidden-xs Win 98+ / OSX.1+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Seamonkey 1.1
+                                    td.hidden-xs Win 98+ / OSX.2+
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Gecko
+                                    td Epiphany 2.20
+                                    td.hidden-xs Gnome
+                                    td.center 1.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td Safari 1.2
+                                    td.hidden-xs OSX.3
+                                    td.center 125.5
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td Safari 1.3
+                                    td.hidden-xs OSX.3
+                                    td.center 312.8
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td Safari 2.0
+                                    td.hidden-xs OSX.4+
+                                    td.center 419.3
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td Safari 3.0
+                                    td.hidden-xs OSX.4+
+                                    td.center 522.1
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td OmniWeb 5.5
+                                    td.hidden-xs OSX.4+
+                                    td.center 420
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td iPod Touch / iPhone
+                                    td.hidden-xs iPod
+                                    td.center 420.1
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Webkit
+                                    td S60
+                                    td.hidden-xs S60
+                                    td.center 413
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 7.0
+                                    td.hidden-xs Win 95+ / OSX.1+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 7.5
+                                    td.hidden-xs Win 95+ / OSX.2+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 8.0
+                                    td.hidden-xs Win 95+ / OSX.2+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 8.5
+                                    td.hidden-xs Win 95+ / OSX.2+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 9.0
+                                    td.hidden-xs Win 95+ / OSX.3+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 9.2
+                                    td.hidden-xs Win 88+ / OSX.3+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera 9.5
+                                    td.hidden-xs Win 88+ / OSX.3+
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Opera for Wii
+                                    td.hidden-xs Wii
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Nokia N800
+                                    td.hidden-xs N800
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td Presto
+                                    td Nintendo DS browser
+                                    td.hidden-xs Nintendo DS
+                                    td.center 8.5
+                                    td.center.hidden-xs
+                                      | C/A
+                                      sup 1
+                                  tr.gradeC
+                                    td KHTML
+                                    td Konqureror 3.1
+                                    td.hidden-xs KDE 3.1
+                                    td.center 3.1
+                                    td.center.hidden-xs C
+                                  tr.gradeA
+                                    td KHTML
+                                    td Konqureror 3.3
+                                    td.hidden-xs KDE 3.3
+                                    td.center 3.3
+                                    td.center.hidden-xs A
+                                  tr.gradeA
+                                    td KHTML
+                                    td Konqureror 3.5
+                                    td.hidden-xs KDE 3.5
+                                    td.center 3.5
+                                    td.center.hidden-xs A
+                                  tr.gradeX
+                                    td Tasman
+                                    td Internet Explorer 4.5
+                                    td.hidden-xs Mac OS 8-9
+                                    td.center -
+                                    td.center.hidden-xs X
+                                  tr.gradeC
+                                    td Tasman
+                                    td Internet Explorer 5.1
+                                    td.hidden-xs Mac OS 7.6-9
+                                    td.center 1
+                                    td.center.hidden-xs C
+                                  tr.gradeC
+                                    td Tasman
+                                    td Internet Explorer 5.2
+                                    td.hidden-xs Mac OS 8-X
+                                    td.center 1
+                                    td.center.hidden-xs C
+                                  tr.gradeA
+                                    td Misc
+                                    td NetFront 3.1
+                                    td.hidden-xs Embedded devices
+                                    td.center -
+                                    td.center.hidden-xs C
+                                  tr.gradeA
+                                    td Misc
+                                    td NetFront 3.4
+                                    td.hidden-xs Embedded devices
+                                    td.center -
+                                    td.center.hidden-xs A
+                                  tr.gradeX
+                                    td Misc
+                                    td Dillo 0.8
+                                    td.hidden-xs Embedded devices
+                                    td.center -
+                                    td.center.hidden-xs X
+                                  tr.gradeX
+                                    td Misc
+                                    td Links
+                                    td.hidden-xs Text only
+                                    td.center -
+                                    td.center.hidden-xs X
+                                  tr.gradeX
+                                    td Misc
+                                    td Lynx
+                                    td.hidden-xs Text only
+                                    td.center -
+                                    td.center.hidden-xs X
+                                  tr.gradeC
+                                    td Misc
+                                    td IE Mobile
+                                    td.hidden-xs Windows Mobile 6
+                                    td.center -
+                                    td.center.hidden-xs C
+                                  tr.gradeC
+                                    td Misc
+                                    td PSP browser
+                                    td.hidden-xs PSP
+                                    td.center -
+                                    td.center.hidden-xs C
+                                  tr.gradeU
+                                    td Other browsers
+                                    td.hidden-xs All others
+                                    td -
+                                    td.center -
+                                    td.center.hidden-xs U
+                                tfoot
+                                  tr
+                                    th Rendering engine
+                                    th Browser
+                                    th.hidden-xs Platform(s)
+                                    th Engine version
+                                    th.hidden-xs CSS grade
+                .footer-tools
+                    span.go-top
+                        i.fa.fa-chevron-up
+                        | Top
+
+        include /admin/js

@@ -1,0 +1,262 @@
+doctype html
+html
+    include ../header
+    body
+        include ../navbar
+        section#page-title.page-title-1(data-stellar-background-ratio='0.5')
+          .container
+            .row
+              .grid_8
+                .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+                  h1
+                    | Check Out Our Latest
+                    span.strong Events
+              //
+                 .grid_6 end
+              //
+                 .grid_6 start
+              .grid_4
+                .pt-image-container
+                  .pt-image.triggerAnimation.animated(data-animate='fadeInRight')
+                    img(src='/public/img/page-titles/blog-page-title.png', alt='blog image')
+            //
+               .row end
+            .row
+              .grid_8
+                .breadcrumbs.triggerAnimation.animated(data-animate='fadeInUp')
+                  ul
+                    li
+                      span You are here:
+                    li
+                      a(href='blog.html') News /
+                    li
+                      span.active Events
+          //
+             .container end
+        //
+           #page-title end
+        //
+           .page-content start
+        section.page-content
+          //
+             .container start
+          .container
+            //
+               .row start
+            .row
+              //
+                 .grid_9.blog-posts start
+              ul.grid_9.blog-posts.blog-post-small-image.triggerAnimation.animated(data-animate='fadeInLeft')
+                //
+                   .blog-post.format-standard start
+                li.blog-post.format-standard
+                  .post-media-container
+                    a(href='blogsingle.html')
+                      img(src='/public/img/blog/blog-1-alt.jpg', alt='standard blog post with image')
+                    .post-media-hover
+                      a.mask(href='blogsingle.html')
+                  //
+                     .post-media-container
+                  //
+                     .post-body start
+                  article.post-body
+                    //
+                       .post-info start
+                    .post-info-container
+                      ul.date-category
+                        li.post-date
+                          span.day 27
+                          span.month DEC
+                        li.post-category
+                          i.icon-briefcase
+                      .post-info
+                        a(href='blogsingle.html')
+                          h3 Standard image blog post
+                        ul.post-meta
+                          li.icon-clock
+                            span Dec 27, 2013
+                          li.icon-user
+                            a(href='#') Admin
+                        //
+                           .post-meta end
+                      //
+                         .post-info end
+                    //
+                       .post-info-container end
+                    p
+                      | This is a simple example of blog post
+                      | standard format. Curabitur non velit odio.
+                      | Sed et sollicitudin ante. Phasellus dapibus
+                      | lorem et lacus scelerisque facilisis. Donec
+                      | quis scelerisque arcu, ac ullamcorper neque.
+                      | In sagittis libero vitae velit accumsan
+                      | bibendum. Cras fermentum nisl turpis, sit
+                      | amet.
+                    a.read-more(href='blogsingle.html')
+                      | Read more
+                      span.icon-arrow-right-3
+                  //
+                     .post-body end
+                //
+                   .blog-post.format-standard end
+                //
+                   .blog-post.format-video start
+                li.blog-post.format-video
+                  .post-media-container
+                    iframe(src='http://player.vimeo.com/video/79298633?title=0&byline=0&portrait=0&color=3dd6e7')
+                  //
+                     .post-media-container
+                  article.post-body
+                    //
+                       .post-info start
+                    .post-info-container
+                      ul.date-category
+                        li.post-date
+                          span.day 12
+                          span.month DEC
+                        li.post-category
+                          i.icon-play-2
+                      .post-info
+                        a(href='blogsingle.html')
+                          h3 Blog post with vimeo video
+                        ul.post-meta
+                          li.icon-clock
+                            span Dec 12, 2013
+                          li.icon-user
+                            a(href='#') Admin
+                        //
+                           .post-meta end
+                      //
+                         .post-info end
+                    //
+                       .post-info-container end
+                    p
+                      | This is a simple example of blog post
+                      | with vimeo video. Curabitur non velit odio.
+                      | Sed et sollicitudin ante. Phasellus dapibus
+                      | lorem et lacus scelerisque facilisis. Donec
+                      | quis scelerisque arcu, ac ullamcorper neque.
+                      | In sagittis libero vitae velit accumsan
+                      | bibendum. Cras fermentum nisl turpis, sit
+                      | amet.
+                    a.read-more(href='blogsingle.html')
+                      | Read more
+                      span.icon-arrow-right-3
+                  //
+                     .post-body end
+                //
+                   .blog-post.format-video end
+                li.pagination
+                  ul
+                    li.current-page
+                      span Page 1 of 5
+                    li.active
+                      a(href='#') 1
+                    li
+                      a(href='#') 2
+                    li
+                      a(href='#') 3
+                    li
+                      a(href='#') 4
+                    li
+                      a(href='#') 5
+                    li
+                      a.icon-double-angle-right(href='#')
+              //
+                 .grid_9.blog-posts end
+              //
+                 .grid_3.aside-right start
+              aside.grid_3.aside-right.triggerAnimation.animated(data-animate='fadeInRight')
+                //
+                   .aside_widgets start
+                ul.aside_widgets
+                  //
+                     .widget.widget_search start
+                  li.widget.widget_search
+                    h6 blog search
+                    form(action='#', method='get')
+                      input#a_search(name='s', type='text', placeholder='Type and hit enter...')
+                      input.search-submit(type='submit')
+                  //
+                     .widget.widget_search end
+                  //
+                     .widget.pi_recent_posts start
+                  li.widget.pi_recent_posts
+                    h6 recent posts
+                    ul
+                      li
+                        .post-media
+                          img(src='/public/img/blog/recent-post-1.jpg', alt='recent post image')
+                        .widget-post-info
+                          a(href='blogsingle.html')
+                            h6 Winter is here
+                          ul.meta
+                            li.icon-clock
+                              span Dec 28, 2013,
+                            li.icon-user
+                              a(href='#') Admin
+                      li
+                        .post-media
+                          img(src='/public/img/blog/recent-post-2.jpg', alt='creative world')
+                        .widget-post-info
+                          a(href='blogsingle.html')
+                            h6 Creative world
+                          ul.meta
+                            li.icon-clock
+                              span Dec 18, 2013,
+                            li.icon-user
+                              a(href='#') Admin
+                      li
+                        .post-media
+                          img(src='/public/img/blog/recent-post-3.jpg', alt='touch enabled sliders')
+                        .widget-post-info
+                          a(href='blogsingle.html')
+                            h6 Touch enabled sliders
+                          ul.meta
+                            li.icon-clock
+                              span Dec 15, 2013,
+                            li.icon-user
+                              a(href='#') Admin
+                  //
+                     .pi_recent_posts end
+                  //
+                     .widget_categories start
+                  li.widget.widget_categories
+                    h6 blog categories
+                    ul
+                      li
+                        a(href='blogsingle.html') Corporate news (3)
+                      li
+                        a(href='blogsingle.html') Information technology (5)
+                      li
+                        a(href='blogsingle.html') Web development (3)
+                      li
+                        a(href='blogsingle.html') Web design news (25)
+                  //
+                     .widget_categories end
+                  //
+                     .social-feed end
+                //
+                   .aside_widgets end
+              //
+                 .grid_3.aside-right end
+            //
+               .row end
+          //
+             .container end
+        //
+           .page-content end
+        //
+        include ../footer
+        script.
+            jQuery(document).ready(function($){
+                /* ================ INSTAGRAM FEED ================ */
+                $('.instagram-feed').socialstream({
+                        socialnetwork: 'instagram',
+                        limit: 16,
+                        username: 'cisco',
+                        overlay: true
+                    });
+            });
+
+

@@ -1,0 +1,84 @@
+doctype html
+html
+    include ../header
+    body
+        include ../navbar
+        section#page-title.page-title-1.no-image(data-stellar-background-ratio='0.5')
+              .container
+                .row
+                  .grid_12
+                    .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+                      h1
+                        | Meet The&nbsp;
+                        span.strong Students&nbsp;
+                        br
+                        | Who Manage The Fund&period;
+                .row
+                  .grid_8
+                    .breadcrumbs.triggerAnimation.animated(data-animate='fadeInUp')
+                      ul
+                        li
+                          span You are here&colon;
+                        li
+                          a(href='/company') Company &sol;
+                        li
+                          a(href='/company/team') Team &sol;
+                        li
+                          span.active About
+            section.page-content
+              .container
+                .row
+                  aside.grid_3.aside-left.triggerAnimation.animated(data-animate='fadeInLeft')
+                    ul.aside_widgets
+                      li.widget.widget_search
+                        h6 Member Search
+                        form(action='#', method='get')
+                          input#a_search(type='text', name='s', placeholder='Type and hit enter...')
+                          input.search-submit(type='submit')
+                      li.widget.widget_categories
+                        h6 Member Years
+                        ul
+                          li
+                            a(href='#') Spring 2014
+                          li
+                            a(href='/company/team/fall-2013') Fall 2013
+                          li
+                            a(href='#') Spring 2013
+                          li
+                            a(href='#') Fall 2012
+                          li
+                            a(href='#') Spring 2012
+                          li
+                            a(href='#') Fall 2011
+                          li
+                            a(href='#') Spring 2011
+                          li
+                            a(href='#') Fall 2010
+                  article.grid_9.triggerAnimation.animated(data-animate='fadeInRight')
+                    section.heading-bordered
+                      h3 Meet The Team
+                    section#slider.nivoSlider
+                      img(src='/public/img/members/spring-2014/sif-spring-2014.jpg', alt='SIF Spring 2014')
+                      img(src='/public/img/members/fall-2013/sif-fall-2013.jpg', alt='SIF Fall 2013')
+                      img(src='/public/img/members/spring-2013/sif-spring-2013.jpg', alt='SIF Spring 2013')
+                    // .nivoSlider end
+        include ../footer
+        script(data-loaded='true').
+            /* <![CDATA[ */
+            jQuery(document).ready(function($) {
+                'use strict';
+
+                //NIVO SLIDER
+                $('#slider').nivoSlider();
+
+                /* ================ INSTAGRAM FEED ================ */
+                $('.instagram-feed').socialstream({
+                    socialnetwork: 'instagram',
+                    limit: 16,
+                    username: 'cisco',
+                    overlay: true
+                });
+            });
+
+            /* ]]> */
+

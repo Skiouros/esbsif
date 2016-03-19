@@ -1,0 +1,131 @@
+doctype html
+html
+    include ../header
+    body
+        include ../navbar
+        section#page-title.page-title-2(data-stellar-background-ratio='0.5')
+          .container
+            .row
+              .grid_12
+                .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+                  h1 About Me
+                .breadcrumbs.triggerAnimation.animated(data-animate='fadeInUp')
+                  ul
+                    li
+                      span You are here:
+                    li
+                      a(href='/company') Company /
+                    li
+                      a(href='/company/team') Team /
+                    li
+                      span.active Member Name
+              //
+                 .grid_8 end
+            //
+               .row end
+          //
+             .container end
+        //
+           #page-title end
+        //
+           .page-content start
+        section.page-content
+          //
+             .container start
+          .container
+            //
+               .row start
+            .row
+              //
+                 .grid_6 start
+              article.grid_3
+                .triggerAnimation.animated(data-animate='fadeInLeft')
+                  img(src='/public/user/fall 2012/david_wu.jpg', alt='team member image')
+              //
+                 .grid_6 end
+              //
+                 .grid_6 start
+              article.grid_6
+                .triggerAnimation.animated(data-animate='fadeInRight')
+                  //
+                     .heading-bordered start
+                  section.heading-bordered
+                    h4 Member Name
+                  //
+                     .heading-bordered end
+                  h5 Member Role
+                  p
+                    | David is currently a Senior with a Major in Economics and a
+                    | Minor in Political Science. Student Investment Fund is his
+                    | first time with Portfolio Management. He is interested in a
+                    | wide array of professional interests including Marketing, Analysis,
+                    | and Streamline Efficiency. He was born in Oshkosh, Wisconsin, and
+                    | moved around the United States a lot when he was younger. He enjoys
+                    | composing, performing, and listening to music. He was a member of
+                    | the University Of the Pacific Speech and Debate team last fall,
+                    | earning second place at the last tournament in Irvine. During his
+                    | sophomore year Spring semester, he studied abroad to Florence, Italy.
+                  ul.team-social-links
+                    li
+                      a.icon-envelope(href='mailto:wouyang@pacific.edu')
+                    li
+                      a.icon-phone(href='tel:+12099463910')
+                    li
+                      a.pixons-linkedin(href='http://www.linkedin.com/pub/wenjing-ouyang/16/357/b68')
+                  //
+                     .team-social-links end
+                //
+                   .triggerAnimation.animated end
+              //
+                 .grid_6 end
+              article.grid_3
+                //
+                   .grid_4 start
+                article.grid_3
+                  .triggerAnimation.animated(data-animate='fadeInUp')
+                    section.heading-bordered
+                      h4 Involvement Years
+                    li.widget
+                      ul
+                        li
+                          a(href='#') Fall 2013
+                        li
+                          a(href='#') Spring 2013
+                article.grid_3
+                  .triggerAnimation.animated(data-animate='fadeInUp')
+                    section.heading-bordered
+                      h4 Recent Blog Posts
+                    li.widget
+                      ul
+                        li
+                          a(href='#') Fall 2013
+                        li
+                          a(href='#') Spring 2013
+
+            //
+               .row end
+        include ../footer
+        script.
+          /* <![CDATA[ */
+          jQuery(document).ready(function($) {
+          'use strict';
+          $('.skills-bar').waypoint(function() {
+          $('.skills li span').addClass('expand');
+          },
+          {offset: '70%'}
+          );
+          });
+          /* ================ INSTAGRAM FEED ================ */
+          $('.instagram-feed').socialstream({
+          socialnetwork: 'instagram',
+          limit: 16,
+          username: 'cisco',
+          overlay: true
+          });
+          /* ================ NEWSFEED ================ */
+          $('.newsfeed').socialstream({
+          socialnetwork: 'newsfeed',
+          limit: 15,
+          username: ' http://feeds.feedburner.com/webdesignerdepot?format=xml'
+          });
+          /* ]]> */

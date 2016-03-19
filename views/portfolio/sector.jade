@@ -1,0 +1,191 @@
+doctype html
+html
+    include ../header
+  body
+    include ../navbar
+    section#page-title.page-title-1(data-stellar-background-ratio='0.5')
+      .container
+        .row
+          .grid_8
+            .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+              h1
+                =project.name
+        .row
+          .grid_8
+            .breadcrumbs.triggerAnimation.animated(data-animate='fadeInUp')
+              ul
+                li
+                  span You are here:
+                li
+                  a(href='/portfolio') Portfolio /
+                li
+                  a(href='/portfolio/sectors') Sectors /
+                li
+                  span.active
+                  =project.name
+    section.page-content
+      .container
+        .row
+          article.grid_7.triggerAnimation.animated(data-animate='fadeInLeft')
+            img(src=project.img, alt=project.name)
+          article.grid_5.triggerAnimation.animated(data-animate='fadeInRight')
+            section.heading-bordered
+                h3
+                  =project.name
+            ul.portfolio-info
+            br
+            p
+                =project.info
+            br
+            .portfolio-single-like.clearfix
+              p Share Our Investment:
+              .sharre-facebook.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/wyn', data-text='Wyndham Worldwide Corp.')
+            br
+            a.btn-medium.empty(href=project.website, target="_blank") Launch website
+    section.page-content.parallax.pattern(data-stellar-background-ratio='0.5')
+      .container
+        .row
+          article.grid_12
+            section.heading-centered.triggerAnimation.animated(data-animate='bounceIn')
+              h2 Related Projects
+              p Check our latest portfolio projects. Sure you'll find something interesting.
+        .row
+          article.grid_12
+            article.portfolio-carousel.triggerAnimation.animated(data-animate='fadeInUp')
+              ul#portfolio-carousel.carousel-li
+                li.isotope-item
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      img(src='/public/img/portfolio/cols/portfolio-1.jpg', alt='portfolio image')
+                      .portfolio-img-hover
+                        .mask
+                        ul
+                          li.portfolio-zoom
+                            a.icon-expand-2(href='/public/img/portfolio/cols/portfolio-1.jpg', data-gal='prettyPhoto[pp_gallery]')
+                          li.portfolio-single
+                            a.icon-redo(href='portfoliosingle.html')
+                    figcaption
+                      a.title(href='portfoliosingle.html') Running notes
+                      .sharre-facebook.portfolio-item-like.icon-heart(data-url='http://www.pixel-industry.com/', data-text='Just an example of sharing your portfolio image')
+                li.isotope-item
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      img(src='/public/img/portfolio/cols/portfolio-2.jpg', alt='portfolio image')
+                      .portfolio-img-hover
+                        .mask
+                        ul
+                          li.portfolio-zoom
+                            a.icon-expand-2(href='/public/img/portfolio/cols/portfolio-2.jpg', data-gal='prettyPhoto[pp_gallery]')
+                          li.portfolio-single
+                            a.icon-redo(href='portfoliosingle.html')
+                    figcaption
+                      a.title(href='portfoliosingle.html') On the top of the world
+                      .sharre-facebook.portfolio-item-like.icon-heart(data-url='http://themeforest.net/item/elvyre-professional-corporate-psd-template/6218124', data-text='Just an example of sharing your portfolio image')
+                li.isotope-item
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      img(src='/public/img/portfolio/cols/portfolio-3.jpg', alt='portfolio image')
+                      .portfolio-img-hover
+                        .mask
+                        ul
+                          li.portfolio-zoom
+                            a.icon-expand-2(href='/public/img/portfolio/cols/portfolio-3.jpg', data-gal='prettyPhoto[pp_gallery]')
+                          li.portfolio-single
+                            a.icon-redo(href='portfoliosingle.html')
+                    figcaption
+                      a.title(href='portfoliosingle.html') Parallel universe
+                      .sharre-facebook.portfolio-item-like.icon-heart(data-url='http://themeforest.net/item/metropolis-clean-multipurpose-wordpress-theme/6050528', data-text='Just an example of sharing your portfolio image')
+                li.isotope-item
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      img(src='/public/img/portfolio/cols/portfolio-4.jpg', alt='portfolio image')
+                      .portfolio-img-hover
+                        .mask
+                        ul
+                          li.portfolio-zoom
+                            a.icon-expand-2(href='/public/img/portfolio/cols/portfolio-4.jpg', data-gal='prettyPhoto[pp_gallery]')
+                          li.portfolio-single
+                            a.icon-redo(href='portfoliosingle.html')
+                    figcaption
+                      a.title(href='portfoliosingle.html') Grow creativiry
+                      .sharre-facebook.portfolio-item-like.icon-heart(data-url='http://themeforest.net/item/thalassa-extensive-html5-template/6012626', data-text='Just an example of sharing your portfolio image')
+                li.isotope-item
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      img(src='/public/img/portfolio/cols/portfolio-5.jpg', alt='portfolio image')
+                      .portfolio-img-hover
+                        .mask
+                        ul
+                          li.portfolio-zoom
+                            a.icon-expand-2(href='/public/img/portfolio/cols/portfolio-5.jpg', data-gal='prettyPhoto[pp_gallery]')
+                          li.portfolio-single
+                            a.icon-redo(href='portfoliosingle.html')
+                    figcaption
+                      a.title(href='portfoliosingle.html') Inner child
+                      .sharre-facebook.portfolio-item-like.icon-heart(data-url='http://themeforest.net/item/cleanbiz-multipurpose-wordpress-theme/4935456', data-text='Just an example of sharing your portfolio image')
+                li.isotope-item
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      img(src='/public/img/portfolio/cols/portfolio-6.jpg', alt='portfolio image')
+                      .portfolio-img-hover
+                        .mask
+                        ul
+                          li.portfolio-zoom
+                            a.icon-expand-2(href='/public/img/portfolio/cols/portfolio-6.jpg', data-gal='prettyPhoto[pp_gallery]')
+                          li.portfolio-single
+                            a.icon-redo(href='portfoliosingle.html')
+                    figcaption
+                      a.title(href='portfoliosingle.html') Fresh ideas
+                      .sharre-facebook.portfolio-item-like.icon-heart(data-url='http://themeforest.net/item/alexx-multipurpose-wordpress-theme/3951507', data-text='Just an example of sharing your portfolio image')
+              .clearfix
+              ul.carousel-nav
+                li
+                  a.c_prev(href='#')
+                li
+                  a.c_next(href='#')
+    include ../footer
+    script.
+        /* <![CDATA[ */
+        jQuery(document).ready(function($) {
+        'use strict';
+        //NIVO SLIDER
+        $('#post-slider').nivoSlider();
+        // PRETTYPHOTO LIGHTBOX START
+        if (jQuery().prettyPhoto) {
+        piPrettyphoto();
+        }
+        function piPrettyphoto() {
+        $("a[data-gal^='prettyPhoto']").prettyPhoto({social_tools: false});
+        }// PRETTYPHOTO LIGHTBOX END
+        //JQUERY SHARRE PLUGIN END
+        $('.sharre-facebook').sharrre({
+        share: {
+        facebook: true
+        },
+        enableHover: false,
+        enableTracking: true,
+        click: function(api, options) {
+        api.simulateClick();
+        api.openPopup('facebook');
+        }
+        });
+        //  Responsive layout, resizing the items
+        $('#portfolio-carousel').carouFredSel({
+        responsive: true,
+        width: '100%',
+        height: '100%',
+        auto: false,
+        scroll: 1,
+        prev: '.c_prev',
+        next: '.c_next',
+        items: {
+        width: 400,
+        height: '100%',
+        visible: {
+        min: 1,
+        max: 4
+        }
+        }
+        });
+        });
+        /* ]]> */

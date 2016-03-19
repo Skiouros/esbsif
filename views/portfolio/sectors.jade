@@ -1,0 +1,151 @@
+doctype html
+html
+  include ../header
+  body
+    include ../navbar
+    section#page-title.page-title-1(data-stellar-background-ratio='0.5')
+      .container
+        .row
+          .grid_8
+            .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+              h1
+                | We Strive To Increase
+                br
+                | The&nbsp;
+                span.strong Longevity&nbsp;
+                | and&nbsp;
+                span.strong Sucess&nbsp;
+                | of Our Portfolio
+          .grid_4
+            .pt-image-container
+              .pt-image.triggerAnimation.animated(data-animate='fadeInRight')
+                img.float-right(src='/public/img/page-titles/portfolio-page-title.png', alt='portfolio page title image')
+        .row
+          .grid_8
+            .breadcrumbs.triggerAnimation.animated(data-animate='fadeInUp')
+              ul
+                li
+                  span You are here:
+                li
+                  a(href='/portfolio') Portfolio /
+                li
+                  span.active Sectors
+    section.page-content
+      .container
+        .row
+          .grid_6
+            .triggerAnimation.animated(data-animate='fadeInLeft')
+              section
+                img(src='/public/img/portfolio/cols/stocks-1.jpg', alt='about us slider image')
+          article.grid_6
+            .triggerAnimation.animated(data-animate='fadeInRight')
+              section.heading-bordered
+                h3
+                  b Intelligent&nbsp;
+                  | Investments
+              p
+                | The Eberhardt School of Business Student Investment Fund
+                | investment with an overall motive and that is
+                quote  Longevity of the fund
+                br
+                br
+                | Elvyre is perfect for&nbsp;
+                span.highlighted-color professional business websites,
+                | for small or big companies. It comes with couple of
+                | predefined color options, but you can use any color
+                | you want. It is very easy to customize it to fit
+                | your design or brand needs.
+              br
+              br
+              blockquote
+                p
+                  | Our mission is providing highest quality web
+                  | solutions at affordable prices, with fast
+                  | delivery and excellent customer service.
+                  br
+                  br
+                  | Our vision is to increase our market share to 56%
+                  | till the end of second quartal of 2014.,by
+                  | decreasing delivery time for 15%.
+            //
+               .triggerAnimation.animated end
+          //
+             .grid_6 end
+        //
+           .row end
+        //
+           .row start
+        .row.portfolio-filters.triggerAnimation.animated(data-animate='fadeInDown')
+          section.grid_12
+            section.heading-bordered
+              h3
+                b Our&nbsp;
+                | Investment Sectors
+            //
+               .heading-bordered end
+            ul#filters
+              li.active
+                a(href='#', data-filter='*') All
+              li
+                a(href='#', data-filter='.cd') Consumer Discretionary
+              li
+                a(href='#', data-filter='.cs') Consumer Staples
+              li
+                a(href='#', data-filter='.enrg') Energy
+              li
+                a(href='#', data-filter='.fin') Financials
+              li
+                a(href='#', data-filter='.hc') Health Care
+              li
+                a(href='#', data-filter='.ind') Industrials
+              li
+                a(href='#', data-filter='.it') Information Technology
+              li
+                a(href='#', data-filter='.mat') Materials
+              li
+                a(href='#', data-filter='.util') Utilities
+              li
+                a(href='#', data-filter='.uncl') Unclassified
+        .row.portfolio-items-holder.triggerAnimation.animated(data-animate='fadeInUp')
+          ul#portfolioitems.isotope
+              each sector, key in sectors
+                li(class='grid_3 isotope-item ' + sector.category)
+                  figure.portfolio-img-container
+                    .portfolio-img
+                      a(data='Test', href='/portfolio/sectors/' + sector.abbrv)
+                        img(src=sector.img, alt=sector.name)
+                    figcaption
+                        a.title(href='/portfolio/sectors/' + sector.abbrv)
+                            =sector.name
+                            .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/' + sector.abbrv, data-text=sector.name)
+    include ../footer
+    script.
+      jQuery(document).ready(function($) {
+      'use strict';
+      //NIVO SLIDER
+      $('#slider').nivoSlider();
+      $('.skills-bar').waypoint(function() {
+      $('.skills li span').addClass('expand');
+      },
+      {offset: '70%'}
+      );
+      //JQUERY SHARRE PLUGIN END
+      $('.share').sharrre({
+      share: {
+      facebook: true
+      },
+      enableHover: false,
+      enableTracking: true,
+      click: function(api, options) {
+      api.simulateClick();
+      api.openPopup('facebook');
+      }
+      });
+      /* ================ INSTAGRAM FEED ================ */
+      $('.instagram-feed').socialstream({
+      socialnetwork: 'instagram',
+      limit: 16,
+      username: 'cisco',
+      overlay: true
+      });
+      });

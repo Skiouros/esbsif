@@ -1,0 +1,301 @@
+doctype html
+html
+  include ../header
+  body
+    incluce ../navbar
+    section#page-title.page-title-1(data-stellar-background-ratio='0.5')
+      .container
+        .row
+          .grid_8
+            .pt-title.triggerAnimation.animated(data-animate='fadeInLeft')
+              h1
+                | We are
+                span.strong passionate
+                | about our design
+                br
+                | and pay great attention to details.
+          .grid_4
+            .pt-image-container
+              .pt-image.triggerAnimation.animated(data-animate='fadeInRight')
+                img.float-right(src='public/img/page-titles/portfolio-page-title.png', alt='portfolio page title image')
+        .row
+          .grid_8
+            .breadcrumbs.triggerAnimation.animated(data-animate='fadeInUp')
+              ul
+                li
+                  span You are here:
+                li
+                  a(href='portfolio3.html') Portfolio / 
+                li
+                  span.active Portfolio 4 columns
+    section.page-content
+      .container
+        .row
+          .grid_6
+            .triggerAnimation.animated(data-animate='fadeInLeft')
+              section#slider.nivoSlider
+                img(src='public/img/portfolio/cols/stocks-1.jpg', alt='about us slider image')
+          article.grid_6
+            .triggerAnimation.animated(data-animate='fadeInRight')
+              section.heading-bordered
+                h3
+                  b Intelligent
+                  | & creative
+              //
+                 .heading-bordered end 
+              p
+                | The Eberhardt School of Business Student Investment Fund
+                | investment with an overall motive and that is
+                quote  Longevity of the fund
+                br
+                br
+                | Elvyre is perfect for
+                span.highlighted-color professional business websites, 
+                | for small or big companies. It comes with couple of
+                | predefined color options, but you can use any color
+                | you want. It is very easy to customize it to fit
+                | your design or brand needs.
+              br
+              br
+              blockquote
+                p
+                  | Our mission is providing highest quality web
+                  | solutions at affordable prices, with fast
+                  | delivery and excellent customer service.
+                  br
+                  br
+                  | Our vision is to increase our market share to 56%
+                  | till the end of second quartal of 2014.,by
+                  | decreasing delivery time for 15%.
+            //
+               .triggerAnimation.animated end 
+          //
+             .grid_6 end 
+        //
+           .row end 
+        //
+           .row start 
+        .row.portfolio-filters.triggerAnimation.animated(data-animate='fadeInDown')
+          section.grid_12
+            section.heading-bordered
+              h3
+                b Our
+                | Investment Sectors
+            //
+               .heading-bordered end 
+            ul#filters
+              li.active
+                a(href='#', data-filter='*') All
+              li
+                a(href='#', data-filter='.cd') Consumer Discretionary
+              li
+                a(href='#', data-filter='.cs') Consumer Staples
+              li
+                a(href='#', data-filter='.enrg') Energy
+              li
+                a(href='#', data-filter='.fin') Financials
+              li
+                a(href='#', data-filter='.hc') Health Care
+              li
+                a(href='#', data-filter='.ind') Industrials
+              li
+                a(href='#', data-filter='.it') Information Technology
+              li
+                a(href='#', data-filter='.mat') Materials
+              li
+                a(href='#', data-filter='.util') Utilities
+              li
+                a(href='#', data-filter='.uncl') Unclassified
+        .row.portfolio-items-holder.triggerAnimation.animated(data-animate='fadeInUp')
+          ul#portfolioitems.isotope
+            li.grid_3.isotope-item.cd
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(data='Test', href='http://esbsif.org/portfolio/sectors/wyn')
+                    img(src='public/img/portfolio/cols/wyn.jpg', alt='Wyndham Worldwide Corp.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/wyn') Wyndham Worldwide Corp.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/wyn', data-text='Wyndham Worldwide Corp. Stock Investment')
+            li.grid_3.isotope-item.cs
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/gis')
+                    img(src='public/img/portfolio/cols/gis.jpg', alt='General Mills Inc.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/gis') General Mills Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/gis', data-text='General Mills Inc. Stock Investment')
+            li.grid_3.isotope-item.cs
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/pep')
+                    img(src='public/img/portfolio/cols/pepsico.jpg', alt='Pepsico Inc.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/pep') Pepsico Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/pep', data-text='Pepsico Inc. Stock Investment')
+            li.grid_3.isotope-item.cs
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/pg')
+                    img(src='public/img/portfolio/cols/pg.jpg', alt='Procter & Gamble CO/The')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/pg') Procter & Gamble CO/The
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/pg', data-text='Procter & Gamble CO/The')
+            li.grid_3.isotope-item.enrg
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/kog')
+                    img(src='public/img/portfolio/cols/kog.jpg', alt='Kodiak Oil & Gas Corp')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/kog') Kodiak Oil & Gas Corp
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/kog', data-text='Kodiak Oil & Gas Corp')
+            li.grid_3.isotope-item.enrg
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/tgp')
+                    img(src='public/img/portfolio/cols/tgp.jpg', alt='Teekay LNG Partners LP')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/tgp') Teekay LNG Partners LP
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/tgp', data-text='Teekay LNG Partners LP')
+            li.grid_3.isotope-item.fin
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/frc')
+                    img(src='public/img/portfolio/cols/frc.jpg', alt='First Republic Bank/CA')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/frc') First Republic Bank/CA
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/frc', data-text='First Republic Bank/CA')
+            li.grid_3.isotope-item.fin
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/hta')
+                    img(src='public/img/portfolio/cols/hta.jpg', alt='Healthcare Trust of AME-CLA')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/hta') Healthcare Trust of AME-CLA
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/hta', data-text='Healthcare Trust of AME-CLA')
+            li.grid_3.isotope-item.fin
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/met')
+                    img(src='public/img/portfolio/cols/met.jpg', alt='Metlife Inc.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/met') Metlife Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/met', data-text='Metlife Inc.')
+            li.grid_3.isotope-item.fin
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/praa')
+                    img(src='public/img/portfolio/cols/praa.jpg', alt='Portfolio Recovery Associate')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/praa') Portfolio Recovery Associate
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/praa', data-text='Portfolio Recovery Associate')
+            li.grid_3.isotope-item.hc
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/jazz')
+                    img(src='public/img/portfolio/cols/jazz.jpg', alt='Jazz Pharmaceuticals PLC')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/jazz') Jazz Pharmaceuticals PLC
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/jazz', data-text='Jazz Pharmaceuticals PLC')
+            li.grid_3.isotope-item.photography
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='')
+                    img(src='public/img/portfolio/cols/wcg.jpg', alt='portfolio image')
+                figcaption
+                  a.title(href='portfoliosingle.html') Welcare Health Plans Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://themeforest.net/item/alexx-multipurpose-wordpress-theme/3951507', data-text='Just an example of sharing your portfolio image')
+            li.grid_3.isotope-item.ind
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/ens')
+                    img(src='public/img/portfolio/cols/ens.jpg', alt='EnerSys')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/ens') EnerSys
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/ens', data-text='EnerSys')
+            li.grid_3.isotope-item.ind
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/pwr')
+                    img(src='public/img/portfolio/cols/pwr.jpg', alt='Quanta Services Inc.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/pwr') Quanta Services Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/pwr', data-text='Quanta Services Inc.')
+            li.grid_3.isotope-item.it
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/mu')
+                    img(src='public/img/portfolio/cols/mu.jpg', alt='Micron Technology Inc.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/mu') Micron Technology Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/mu', data-text='Micron Technology Inc.')
+            li.grid_3.isotope-item.it
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/wdc')
+                    img(src='public/img/portfolio/cols/wdc.jpg', alt='Western Digital Corp.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/wdc') Western Digital Corp.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/wdc', data-text='Western Digital Corp.')
+            li.grid_3.isotope-item.mat
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/rkt')
+                    img(src='public/img/portfolio/cols/rkt.jpg', alt='RockTenn Company')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/rkt') RockTenn Company
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/rkt', data-text='RockTenn Company')
+            li.grid_3.isotope-item.util
+              figure.portfolio-img-container
+                .portfolio-img
+                  a(href='http://esbsif.org/portfolio/sectors/nee')
+                    img(src='public/img/portfolio/cols/nee.jpg', alt='NextEra Energy Inc.')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/nee') NextEra Energy Inc.
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/nee', data-text='NextEra Energy Inc.')
+            li.grid_3.isotope-item.uncl
+              figure.portfolio-img-container
+                .portfolio-img
+                  img(src='public/img/portfolio/cols/agg.jpg', alt='iShares Core Total US Bond Fund Market')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/agg') iShares Core Total US Bond Fund Market
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/agg', data-text='iShares Core Total US Bond Fund Market')
+            li.grid_3.isotope-item.uncl
+              figure.portfolio-img-container
+                .portfolio-img
+                  img(src='public/img/portfolio/cols/ciu.jpg', alt='iShares Intermediate Credit')
+                figcaption
+                  a.title(href='http://esbsif.org/portfolio/sectors/ciu') iShares Intermediate Credit
+                  .share.portfolio-item-like.pixons-sharethis(data-url='http://esbsif.org/portfolio/sectors/ciu', data-text='iShares Intermediate Credit')
+    include ../footer
+    script
+      /* <![CDATA[ */
+      jQuery(document).ready(function($) {
+      'use strict';
+      //NIVO SLIDER
+      $('#slider').nivoSlider();
+      $('.skills-bar').waypoint(function() {
+      $('.skills li span').addClass('expand');
+      },
+      {offset: '70%'}
+      );
+      //JQUERY SHARRE PLUGIN END
+      $('.share').sharrre({
+      share: {
+      facebook: true
+      },
+      enableHover: false,
+      enableTracking: true,
+      click: function(api, options) {
+      api.simulateClick();
+      api.openPopup('facebook');
+      }
+      });
+      /* ================ INSTAGRAM FEED ================ */
+      $('.instagram-feed').socialstream({
+      socialnetwork: 'instagram',
+      limit: 16,
+      username: 'cisco',
+      overlay: true
+      });
+      });
+      /* ]]> */

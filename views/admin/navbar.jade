@@ -1,0 +1,184 @@
+// HEADER
+header#header.navbar.clearfix
+  .container
+    .navbar-brand
+      // COMPANY LOGO
+      a(href='index.html')
+        img.img-responsive(src='/public/admin/img/logo/logo.png', alt='Cloud Admin Logo', height='30', width='120')
+      // /COMPANY LOGO
+      // SIDEBAR COLLAPSE
+      #sidebar-collapse.sidebar-collapse.btn
+        i.fa.fa-bars(data-icon1='fa fa-bars', data-icon2='fa fa-bars')
+      // /SIDEBAR COLLAPSE
+    // NAVBAR LEFT
+    ul#navbar-left.nav.navbar-nav.pull-left.hidden-xs
+      li.dropdown
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          i.fa.fa-cog
+          span.name Skins
+          i.fa.fa-angle-down
+        ul.dropdown-menu.skins
+          li.dropdown-title
+            span
+              i.fa.fa-leaf
+              | Theme Skins
+          li
+            a(href='#', data-skin='default') Subtle (default)
+          li
+            a(href='#', data-skin='night') Night
+          li
+            a(href='#', data-skin='earth') Earth
+          li
+            a(href='#', data-skin='utopia') Utopia
+          li
+            a(href='#', data-skin='nature') Nature
+          li
+            a(href='#', data-skin='graphite') Graphite
+    // /NAVBAR LEFT
+    // BEGIN TOP NAVIGATION MENU
+    ul.nav.navbar-nav.pull-right
+      // BEGIN USER LOGIN DROPDOWN
+      li#header-user.dropdown.user
+        a.dropdown-toggle(href='#', data-toggle='dropdown')
+          img(alt='', src='/public/admin/img/avatars/avatar3.jpg')
+          span.username John Doe
+          i.fa.fa-angle-down
+        ul.dropdown-menu
+          li
+            a(href='#')
+              i.fa.fa-user
+              | My Profile
+          li
+            a(href='#')
+              i.fa.fa-cog
+              | Account Settings
+          li
+            a(href='#')
+              i.fa.fa-eye
+              | Privacy Settings
+          li
+            a(href='login.html')
+              i.fa.fa-power-off
+              | Log Out
+      // END USER LOGIN DROPDOWN
+    // END TOP NAVIGATION MENU
+// /HEADER
+// PAGE
+section#page
+  // SIDEBAR
+  #sidebar.sidebar
+    .sidebar-menu.nav-collapse
+      .divide-20
+      // SEARCH BAR
+      #search-bar
+        input.search(type='text', placeholder='Search')
+        i.fa.fa-search.search-icon
+      // /SEARCH BAR
+      // SIDEBAR QUICK-LAUNCH
+      //
+      // SIDEBAR MENU
+      ul
+        li.active
+          a(href='/admin')
+            i.fa.fa-tachometer.fa-fw
+            span.menu-text Dashboard
+            span.selected
+        li.has-sub
+          a(href='javascript:;')
+            i.fa.fa-pencil-square-o.fa-fw
+            span.menu-text Blog
+            span.arrow
+          ul.sub
+            li
+              a(href='forms.html')
+                span.sub-menu-text Forms
+            li
+              a(href='wizards_validations.html')
+                span.sub-menu-text Wizards &#38; Validations
+            li
+              a(href='rich_text_editors.html')
+                span.sub-menu-text Rich Text Editors
+            li
+              a(href='dropzone_file_upload.html')
+                span.sub-menu-text Dropzone File Upload
+        li.has-sub
+          a(href='javascript:;')
+            i.fa.fa-bullhorn.fa-fw
+            span.menu-text Events
+            span.arrow
+          ul.sub
+            li
+              a(href='forms.html')
+                span.sub-menu-text Forms
+            li
+              a(href='wizards_validations.html')
+                span.sub-menu-text Wizards &#38; Validations
+            li
+              a(href='rich_text_editors.html')
+                span.sub-menu-text Rich Text Editors
+            li
+              a(href='dropzone_file_upload.html')
+                span.sub-menu-text Dropzone File Upload
+        li.has-sub
+          a(href='javascript:;')
+            i.fa.fa-briefcase.fa-fw
+            span.menu-text Members
+            span.arrow
+          ul.sub
+            li
+              a(href='#')
+                span.sub-menu-text Add
+
+            li
+              a(href='/admin/user/manage')
+                span.sub-menu-text Manage
+        li.has-sub
+          a(href='javascript:;')
+            i.fa.fa-file-text.fa-fw
+            span.menu-text Sectors
+            span.arrow
+          ul.sub
+            li
+              a(href='login.html')
+                span.sub-menu-text New
+            li
+              a(href='login_bg.html')
+                span.sub-menu-text Manage
+        li.has-sub
+          a(href='javascript:;')
+            i.fa.fa-envelope.fa-fw
+            span.menu-text
+              | Newsletter
+              span.badge.pull-right 9
+            span.arrow
+          ul.sub
+            li
+              a(href='search_results.html')
+                span.sub-menu-text Search Results
+            li
+              a(href='email_templates.html')
+                span.sub-menu-text Email Templates
+            li
+              a(href='error_404.html')
+                span.sub-menu-text Error 404 Option 1
+            li
+              a(href='error_404_2.html')
+                span.sub-menu-text Error 404 Option 2
+            li
+              a(href='error_404_3.html')
+                span.sub-menu-text Error 404 Option 3
+            li
+              a(href='error_500.html')
+                span.sub-menu-text Error 500 Option 1
+            li
+              a(href='error_500_2.html')
+                span.sub-menu-text Error 500 Option 2
+            li
+              a(href='faq.html')
+                span.sub-menu-text FAQ
+            li
+              a(href='blank_page.html')
+                span.sub-menu-text Blank Page
+      // /SIDEBAR MENU
+  // /SIDEBAR
+

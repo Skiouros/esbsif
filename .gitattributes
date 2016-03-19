@@ -1,0 +1,10 @@
+# Set default behaviour, in case users don't have core.autocrlf set.
+* text=auto
+
+*.coffee text eol=lf
+*.js text eol=lf
+*.jade text eol=lf
+
+# Denote all files that are truly binary and should not be modified.
+*.png binary
+*.jpg binary

@@ -1,0 +1,106 @@
+mixin navbar(option)
+  if navbar == option
+    li.current-menu-item.no.sub
+      if block
+        block
+  else
+    li
+      if block
+        block
+
+
+#header-wrapper.clearfix
+  section#top-bar-wrapper
+    #top-bar.clearfix
+      ul.contact-info
+        li
+          i.icon-phone
+          a(href='tel:+12099463904')
+            span  &plus;1 &lpar;209&rpar; 946-3904
+        li
+          i.icon-envelope-alt
+          span
+            a(href='mailto:contact@esbsif.com')  Contact Us
+      ul.social-links
+        li
+          a.pixons-facebook-2(href='https://www.facebook.com/studentinvestmentfund')
+        li
+          a.pixons-linkedin(href='http://www.linkedin.com/groups/Eberhardt-Student-Investment-Fund-SIF-2512415/about')
+        li
+          a.pixons-instagram(href='#')
+        li
+          a.pixons-twitter-1(href='#')
+        li
+          a.pixons-rss(href='http://esbsif.com/rss.php')
+  header#header.clearfix
+    section#logo
+      a(href='http://esbsif.org/')
+        img(src='/public/img/logo.png', title='Eberhardt School of Business Student Investment Fund', alt='Eberhardt School of Business Student Investment Fund')
+    section#nav-container
+      nav#nav
+        ul
+          +navbar("home")
+            a(href='/') Home
+          +navbar("company")
+            a(href='/company/about') Company
+            ul
+              li
+                a(href='/company/about') About Us
+              li
+                a(href='/company/team') Meet The Team
+          +navbar("portfolio")
+            a(href='/portfolio') Portfolio
+            ul
+              li
+                a(href='/portfolio') Sectors
+          +navbar("news")
+            a(href='/news/blog') News
+            ul
+              li
+                a(href='/news/blog') Blog
+              li
+                a(href='/news/events') Events
+          li
+            a(href='#') Publications
+            ul
+              li
+                a(href='#') Annual Reports
+              li
+                a(href='#') FAQ&apos;s
+
+          +navbar("contact")
+            a(href='/contact') Contact
+    #dl-menu.dl-menuwrapper
+      button.dl-trigger Open Menu
+      ul.dl-menu
+        li
+          a(href='/') Home
+        li
+          a(href='/company') Company
+          ul.dl-submenu
+            li
+              a(href='/company') About Us
+            li
+              a(href='/company/team') Meet The Team
+        li
+          a(href='#') Portfolio
+          ul.dl-submenu
+            li
+              a(href='#') Sectors
+        li
+          a(href='#') News
+          ul.dl-submenu
+            li
+              a(href='#') Blog
+            li
+              a(href='#') Events
+        li
+          a(href='#') Publications
+          ul.dl-submenu
+            li
+              a(href='#') Annual Reports
+            li
+              a(href='#') FAQ&apos;s
+        li
+          a(href='/contact') Contact
+
